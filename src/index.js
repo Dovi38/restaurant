@@ -1,2 +1,7 @@
 import "./style.css";
-import { content } from "./content.js";
+
+import { contents, loadContent } from "./content.js";
+
+console.log(contents);
+
+window.addEventListener("load", loadContent);
