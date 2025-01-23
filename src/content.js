@@ -1,12 +1,15 @@
-import "./style.css";
-import plate from "./assets/plate";
+import "./styles.css";
+import Plate from "./assets/plate.jpg";
 const mainPage = document.querySelector("#content");
 
 export const contents = "Hello js";
 export const setImg = () => {
-  mainPage.style.backgroundImage = plate;
-  mainPage.style.backgroundSize = "cover";
-  mainPage.style.backgroundPosition = "center";
+  console.log(mainPage);
+  const myImage = new Image();
+  myImage.src = Plate;
+  myImage.classList.add("plate");
+  mainPage.appendChild(myImage);
+  return mainPage;
 };
 
 //create landing page here. export function of loading to index.js
