@@ -1,7 +1,7 @@
 import "./styles.css";
 
-import { contents, loadContent, setImg } from "./content.js";
+import { contents, imageDiv, loadContent, setImg } from "./content.js";
 
 console.log(contents);
-document.addEventListener("DOMContentLoaded", setImg);
+document.addEventListener("DOMContentLoaded", imageDiv);
 window.addEventListener("load", loadContent);
