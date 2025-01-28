@@ -32,7 +32,8 @@ body {
 }
 
 header {
-  background-color: white;
+  background-color: #000;
+  border-bottom: 1px solid #fff;
   height: 10%;
   padding: 2rem;
   display: flex;
@@ -46,7 +47,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
 }
 
 button {
@@ -75,6 +76,6 @@ button {
 .text {
   font-size: 50px;
   display: inline-block;
-
+  margin-bottom: 15px;
 
 }
