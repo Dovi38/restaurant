@@ -1,7 +1,7 @@
 import "./styles.css";
 import paella from "./assets/paella.jpg";
 
-const mainPage = document.querySelector("#content");
+export const mainPage = document.querySelector("#content");
 
 const imageDiv = () => {
   const imageContainer = document.createElement("div");
