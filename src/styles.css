@@ -107,6 +107,6 @@ button {
 .modal {
   width: 80%;
   height: 100%;
-  background-color: rgba(rgba(200, 206, 211, 0.944));
+  background-color: rgba(142, 142, 144, 0.411);
   z-index: 1;
 }
