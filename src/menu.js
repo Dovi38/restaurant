@@ -32,10 +32,18 @@ const menuData = [
     platterPrice: "£ 9",
   },
 ];
+const createMenu = (data) => {
+  const menuContainer = document.createElement("div");
+  const menuWrapper = document.createElement("div");
+  const modalMenu = document.createElement("div");
 
-const menuList = (data) => {
+  modalMenu.classList.add("modal");
+  menuContainer.classList.add("menu-container");
+  menuWrapper.classList.add("menu-border");
+
   data.forEach((food) => {
     const menuPart = document.createElement("div");
+    menuPart.classList.add("white-menu");
 
     const nameH1 = document.createElement("h1");
     nameH1.textContent = food.dishName;
@@ -44,32 +52,21 @@ const menuList = (data) => {
     description.textContent = food.content;
 
     const price = document.createElement("p");
-    price.textContent = food.price;
+    price.textContent = food.platterPrice;
 
     menuPart.appendChild(nameH1);
     menuPart.appendChild(description);
     menuPart.appendChild(price);
-
-    //return menuPart;
+    modalMenu.appendChild(menuPart);
   });
-};
-console.log(menuList(menuData));
-const createMenu = () => {
-  const menuContainer = document.createElement("div");
-  const menuWrapper = document.createElement("div");
-  const modalMenu = document.createElement("div");
-
-  modalMenu.classList.add("modal");
-  menuContainer.classList.add("menu-container");
-  menuWrapper.classList.add("menu-border");
-  //
-  //modalMenu.appendChild(); //
   menuWrapper.appendChild(modalMenu);
-  mainPage.appendChild(menuContainer);
   menuContainer.appendChild(menuWrapper);
+  mainPage.appendChild(menuContainer);
+
+  return mainPage;
 };
 
 export const loadMenuPage = () => {
   mainPage.innerHTML = "";
-  createMenu();
+  createMenu(menuData);
 };
