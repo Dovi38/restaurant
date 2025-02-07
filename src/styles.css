@@ -99,7 +99,6 @@ button {
   border: 3px solid #f0f8ff;
   width: 60%;
   /* height: 90vh; */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +110,13 @@ button {
   overflow: auto;
   background-color: rgba(78, 97, 50, 0.5);
   z-index: 1;
+}
+
+.menu-top {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin: 0.8rem 0;
 }
 
 .white-menu {
