@@ -40,12 +40,15 @@ const createMenu = (data) => {
   modalMenu.classList.add("modal");
   menuContainer.classList.add("menu-container");
   menuWrapper.classList.add("menu-border");
-
+  const menuTop = document.createElement("h1");
+  menuTop.classList.add("menu-top");
+  menuTop.textContent = "Food Menu";
+  modalMenu.appendChild(menuTop);
   data.forEach((food) => {
     const menuPart = document.createElement("div");
     menuPart.classList.add("white-menu");
 
-    const nameH1 = document.createElement("h1");
+    const nameH1 = document.createElement("h2");
     nameH1.textContent = food.dishName;
 
     const description = document.createElement("p");
@@ -59,6 +62,7 @@ const createMenu = (data) => {
     menuPart.appendChild(price);
     modalMenu.appendChild(menuPart);
   });
+
   menuWrapper.appendChild(modalMenu);
   menuContainer.appendChild(menuWrapper);
   mainPage.appendChild(menuContainer);
