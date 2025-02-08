@@ -1,5 +1,5 @@
 import "./styles.css";
-import plate from "./assets/res6.jpg";
+import plates from "./assets/res6.jpg";
 import { mainPage } from "./home";
 
 const aboutSection = () => {
@@ -7,7 +7,7 @@ const aboutSection = () => {
   contentContainer.classList.add("image-text");
   const imgContainer = document.createElement("img");
   imgContainer.classList.add("imgRestaurant");
-  imgContainer.src = plate;
+  imgContainer.src = plates;
   contentContainer.appendChild(imgContainer);
   const descriptionText = document.createElement("p");
   descriptionText.classList.add("description");
