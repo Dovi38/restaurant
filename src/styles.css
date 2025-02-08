@@ -147,3 +147,9 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+/* style contact page */
+.contact {
+  color: #f0f8ff;
+  font-family: 'Courier New', Courier, monospace;
+}
