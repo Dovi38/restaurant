@@ -40,10 +40,12 @@ const createMenu = (data) => {
   modalMenu.classList.add("modal");
   menuContainer.classList.add("menu-container");
   menuWrapper.classList.add("menu-border");
+
   const menuTop = document.createElement("h1");
   menuTop.classList.add("menu-top");
   menuTop.textContent = "Food Menu";
   modalMenu.appendChild(menuTop);
+
   data.forEach((food) => {
     const menuPart = document.createElement("div");
     menuPart.classList.add("white-menu");
