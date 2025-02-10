@@ -1,37 +1,7 @@
 import "./styles.css";
-
 import { mainPage } from "./home";
+import { menuData } from "./data";
 
-const menuData = [
-  {
-    dishName: "Fresh food platter 1",
-    content:
-      "Fresh olives, cherry tomatoes, cucumber, feta cheese, and mozzarella.",
-    platterPrice: "£ 10",
-  },
-  {
-    dishName: "Fresh food platter 2",
-    content:
-      "Tzatziki, dolmas, fresh hummus, sliced cucumbers, and grilled halloumi.",
-    platterPrice: "£ 15",
-  },
-  {
-    dishName: "Fresh food platter 3",
-    content:
-      "Grilled calamari, fresh shrimp, and smoked salmon with a lemon dill sauce.",
-    platterPrice: "£ 25",
-  },
-  {
-    dishName: "Fresh food platter 4",
-    content: "Assorted cheeses, crackers, and fresh grapes.",
-    platterPrice: "£ 12",
-  },
-  {
-    dishName: "Fresh food platter 5",
-    content: "A vibrant mix of heirloom tomatoes, cucumber, and bell peppers.",
-    platterPrice: "£ 9",
-  },
-];
 const createMenu = (data) => {
   const menuContainer = document.createElement("div");
   const menuWrapper = document.createElement("div");
