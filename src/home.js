@@ -16,7 +16,7 @@ const imageDiv = () => {
   return mainPage;
 };
 
-//create landing page here. export function of loading to index.js
+//export function of loading to index.js
 
 const createHeadline = () => {
   const headline = document.createElement("div");
@@ -32,6 +32,7 @@ const createHeadline = () => {
   headline.appendChild(name);
   headline.appendChild(title);
   mainPage.appendChild(headline);
+
   return headline;
 };
 
@@ -40,17 +41,3 @@ export const loadHomePage = () => {
   imageDiv();
   createHeadline();
 };
-
-////example
-// function loadHome() {
-// 	const contentDiv = document.querySelector("#content");
-// 	contentDiv.appendChild(createHome());
-// }
-// function loadHomePage() {
-//   const content = document.querySelector("#content");
-//   content.textContent = "";
-
-//   content.appendChild(createHomePage());
-// }
-
-// export default loadHomePage;
