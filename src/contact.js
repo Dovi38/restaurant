@@ -15,7 +15,7 @@ const createContacts = (infoData) => {
   modalContact.appendChild(createHeader);
 
   infoData.forEach((elem) => {
-    const subHeader = document.createElement("h2");
+    const subHeader = document.createElement("h3");
     subHeader.textContent = elem.header;
 
     const textInfo = document.createElement("p");
