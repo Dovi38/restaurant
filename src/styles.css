@@ -14,17 +14,15 @@ body {
 }
 
 .imageDiv {
-  width: 60%;
-  overflow: hidden;
+  padding-left: 2rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .plate {
-  /* height: 100%; */
   max-width: 100%;
-  /* display: block; */
 }
 
 header {
